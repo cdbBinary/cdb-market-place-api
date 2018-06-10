@@ -55,6 +55,14 @@ group :development do
   gem 'rename', '~> 1.0', '>= 1.0.6'
 end
 
+group :test do
+  gem 'rspec', '~> 3.7'
+  gem 'factory_girl', '~> 4.9'
+  gem 'ffaker', '~> 2.9'
+  gem 'allocation_tracer', '~> 0.6.3'
+  gem 'stackprof', '~> 0.2.11'
+  gem 'benchmark-ips', '~> 2.7', '>= 2.7.2'
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
