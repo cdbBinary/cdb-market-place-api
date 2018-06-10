@@ -56,7 +56,7 @@ group :development do
 end
 
 group :test do
-  gem 'rspec', '~> 3.7'
+  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
   gem 'factory_girl', '~> 4.9'
   gem 'ffaker', '~> 2.9'
   gem 'allocation_tracer', '~> 0.6.3'
