@@ -29,5 +29,17 @@ module CdbMarketPlaceApi
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.generators do |g|
+      g.test_framework :rspec, fixture: true
+      g.fixture_replacement :factor_girl, dir: 'spec/factories'
+      g.view_spec false
+      g.helper_specs false
+      g.stylesheets = false
+      g.javascript = false
+      g.helper = false
+    end
+
+    config.autoload_paths += %w(\#{config.root}/lib)
   end
 end
